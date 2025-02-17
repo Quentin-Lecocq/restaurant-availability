@@ -1,6 +1,9 @@
-const helloWorld = () => {
-  console.log("Hello World");
-}
+const checkTableAvailability = (allTables) => {
+  const index = allTables.findIndex(
+    ({ available }) => available
+  );
 
-module.exports = helloWorld;
+  return index;
+};
 
+module.exports = checkTableAvailability;
